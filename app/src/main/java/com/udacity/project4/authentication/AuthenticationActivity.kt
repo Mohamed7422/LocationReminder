@@ -59,7 +59,8 @@ class AuthenticationActivity : AppCompatActivity() {
             AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setAvailableProviders(providers)
-                .build(),
+                .setTheme(R.style.AuthUI)
+                 .build(),
             SIGN_IN_RESULT_CODE
         )
 
