@@ -8,19 +8,25 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".authentication.AuthenticationActivity">
+        tools:context=".authentication.AuthenticationActivity"
+        android:background="@drawable/roadlocation"
+        >
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
             android:text="@string/welcome_to_the_location_reminder_app"
-            android:textColor="@color/black"
+            android:textColor="#0E2128"
+
             android:textSize="@dimen/text_size_large"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35" />
 
         <Button
             android:id="@+id/signIn_btn"
@@ -29,9 +35,12 @@
             android:layout_marginStart="@dimen/margin_normal"
             android:layout_marginEnd="@dimen/margin_normal"
             android:layout_marginBottom="@dimen/margin_normal"
-            android:background="@color/colorAccent"
+            android:background="#E6E3D8"
+            android:fontFamily="sans-serif-condensed"
             android:text="@string/login"
-            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
